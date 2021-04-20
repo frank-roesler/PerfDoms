@@ -24,10 +24,10 @@ The repository contains Matlab scripts that compute the homogenized matrix using
 **Functions:**  
 Cell problem:
 * `generate_mesh(r,h)` - generates mesh of size h for a circular hole of radius r (uses `distmesh`)
-* `cell_problem(r,h,xi,plotting)` - calles generate_mesh(r,h) and then solves the cell problem for the vector xi and computes <img src="https://render.githubusercontent.com/render/math?math=A_{\text{hom}}\xi">. If `plotting==true`, the solution N is plotted.
+* `cell_problem(r,h,xi,plotting)` - calles `generate_mesh(r,h)` and then solves the cell problem for the vector xi and computes <img src="https://render.githubusercontent.com/render/math?math=A_{\text{hom}}\xi">. If `plotting==true`, the solution N is plotted.
 * 
 Variational problem:
-* `variational_problem(r,N,xi,plotting)` - minimizes <img src="https://render.githubusercontent.com/render/math?math={\tiny\langle} |\xi %2B \nabla u|^2{\tiny\rangle}_{[0,1]^2\setminus F}"> via finite difference approximation and returns the minimum. 
+* `variational_problem(r,N,xi,plotting)` - solves variational problem via finite difference method and returns the minimum. 
 
 
 Any comments or queries are welcome at https://frank-roesler.github.io/contact/
