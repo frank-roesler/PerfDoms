@@ -27,8 +27,7 @@ Cell problem:
 * `cell_problem(r,h,xi,plotting)` - calles generate_mesh(r,h) and then solves the cell problem for the vector xi and computes <img src="https://render.githubusercontent.com/render/math?math=A_{\text{hom}}\xi">. If `plotting==true`, the solution N is plotted.
 * 
 Variational problem:
-* `chi(x,y,r)` - characteristic function of hole of radius r,
-* `main.m` - script that minimizes <img src="https://render.githubusercontent.com/render/math?math={\tiny\langle} |\xi %2B \nabla u|^2{\tiny\rangle}_{[0,1]^2\setminus F}"> via finite difference approximation.  
+* `variational_problem(r,N,xi,plotting)` - minimizes <img src="https://render.githubusercontent.com/render/math?math={\tiny\langle} |\xi %2B \nabla u|^2{\tiny\rangle}_{[0,1]^2\setminus F}"> via finite difference approximation and returns the minimum. 
 
 
 Any comments or queries are welcome at https://frank-roesler.github.io/contact/
