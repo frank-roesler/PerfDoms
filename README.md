@@ -3,7 +3,8 @@
 This code computes the homogenized matrix for the problem  
 <img src="https://render.githubusercontent.com/render/math?math=-\Delta u_\epsilon = f \, \text{ in }\, \Omega_\epsilon,">  
 <img src="https://render.githubusercontent.com/render/math?math=\partial_\nu u_\epsilon = 0 \, \text{ on } \, \partial\Omega_\epsilon,">  
-where <img src="https://render.githubusercontent.com/render/math?math=\Omega_\epsilon"> is a smooth domain in <img src="https://render.githubusercontent.com/render/math?math=\mathbb{R}^2"> perforated periodically by circular holes whose size and distance is proportional to <img src="https://render.githubusercontent.com/render/math?math=\epsilon">.
+where <img src="https://render.githubusercontent.com/render/math?math=\Omega_\epsilon"> is a smooth domain in <img src="https://render.githubusercontent.com/render/math?math=\mathbb{R}^2"> perforated periodically by circular holes whose size and distance is proportional to <img src="https://render.githubusercontent.com/render/math?math=\epsilon">.  
+See the reference https://www.sciencedirect.com/science/article/pii/0022247X79902117?via%3Dihub for more details.
 
 ## Theory
 As <img src="https://render.githubusercontent.com/render/math?math=\epsilon\to0"> the periodic fine structure gets "averaged out" and the solutions <img src="https://render.githubusercontent.com/render/math?math=u_\epsilon"> converge to a function <img src="https://render.githubusercontent.com/render/math?math=u"> which solves  
